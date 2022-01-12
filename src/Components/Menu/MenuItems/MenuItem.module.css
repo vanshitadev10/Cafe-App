@@ -1,0 +1,38 @@
+.menu-list__item{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    text-align: left;
+}
+
+.list__name{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.list__description{
+    font-size: 1.3rem;
+}
+
+.list__value{
+    font-size: 1.5rem;
+    color: rgb(252, 101, 0);
+}
+
+@media only screen and (max-width: 992px){
+    .menu-list__item{
+        text-align: center;
+    }
+
+    .list__name{
+        font-size: 1.2rem;
+    }
+    
+    .list__description{
+        font-size: 1rem;
+    }
+    
+    .list__value{
+        font-size: 1.2rem;
+    }
+}

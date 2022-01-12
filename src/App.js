@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import Header from './Components/Header/Header';
+import CafeIntroduction from './Components/Menu/CafeIntroduction';
+import CafeItem from './Components/Menu/CafeItem';
+import CartModal from './Components/UI/CartModal';
+import CartProvider from './store/CartProvider';
+
+const App = () => {
+
+    const [valid, setValid] = useState(false);
+
+    const cartOpenHandler = () => {
+        setValid(true);
+    }
+
+    const cartCloseHandler = (validState) => {
+        setValid(validState);
+    }
+
+    return (
+        <CartProvider>
+            {valid && <CartModal value={valid} onClosingCart={cartCloseHandler} />}
+            <Header onClosing={cartOpenHandler} />
+            <main>
+                <CafeIntroduction />
+                <CafeItem />
+            </main>
+        </CartProvider>
+    );
+};
 
 export default App;

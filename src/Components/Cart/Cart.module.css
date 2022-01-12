@@ -1,0 +1,96 @@
+.modal__section{
+    border-bottom: 2px solid #747b8a;
+    margin-bottom: 16px;
+    padding-bottom: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.modal__items{
+    display: grid;
+    width: 40%;
+    grid-template-areas: 'name name name' 'price price value';
+    justify-items: start;
+    align-items: center;
+    gap: 16px 8px;
+    margin-bottom: 24px;
+}
+
+.modal__itemsName{
+    grid-area: name;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.modal__itemsPrice{
+    grid-area: price;
+    font-size: 1.2rem;
+    color: rgb(252, 101, 0);
+}
+
+.modal__itemsValue{
+    padding: 1px 6px;
+    border: 1px solid #747b8a;
+    background-color: #ebebeb;
+    grid-area: value;
+}
+
+.modal__buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+
+.btn-primary{
+    background-color: white;
+    color: #0c0f14;
+    border: 2px solid #0c0f14;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    width: 48px;
+}
+.btn-primary:hover{
+    background-color: #ebebeb;
+}
+
+@media only screen and (max-width: 992px){
+    .modal__section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 24px;
+        padding-bottom: 24px;
+    }
+
+    .modal__items{
+        grid-template-areas: 'name name' 'price value';
+        justify-items: center;
+        width: 80%;
+        gap: 8px;
+        margin-bottom: 24px;
+    }
+
+    .modal__itemsName{
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    
+    .modal__itemsPrice{
+        font-size: 1rem;
+    }
+
+    .modal__itemsValue{
+        padding: 0.5px 6px;
+        font-size: 1rem;
+    }
+
+    .btn-primary{
+        font-size: 1.2rem;
+        width: 40px;
+    }
+}

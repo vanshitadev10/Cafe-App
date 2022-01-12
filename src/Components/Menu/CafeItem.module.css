@@ -1,0 +1,11 @@
+.cafe-menu{
+    width: 70vw;
+    margin: 12vh auto;
+    background-color: white;
+    color: #0c0f14;
+    text-align: center;
+}
+
+.cafe-menu h1{
+    text-decoration: underline;
+}

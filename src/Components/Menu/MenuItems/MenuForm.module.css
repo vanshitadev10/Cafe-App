@@ -1,0 +1,22 @@
+.form-control{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    gap: 16px;
+}
+
+.item__addBtn{
+    font-size: 1.2rem;
+    width: 80%;
+    background-color: #0c0f14;
+    color: white;
+}
+
+.item__addBtn:hover{
+    background-color: #2a313d;
+}
+
+.invalid__num{
+    color: rgb(252, 101, 0);
+}
