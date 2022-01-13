@@ -83,6 +83,12 @@
     color: white;
 }
 
+.btn-invalid{
+    opacity: 0.9;
+    color: #353d4b;
+    pointer-events: none;
+}
+
 @media only screen and (max-width: 992px){
     .modal{
         width: 70vw;

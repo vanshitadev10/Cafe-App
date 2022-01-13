@@ -41,7 +41,7 @@ const Modal = props => {
             </section>
             <footer className={styles.modal__buttons}>
                 <Button className={`${styles.btn} ${styles['btn-primary']}`} onClick={props.onShowing}>Close</Button>
-                <Button className={`${styles.btn} ${styles['btn-secondary']}`}>Order Now</Button>
+                <Button className={`${styles.btn} ${cartCtx.totalAmount ? styles['btn-secondary'] : styles['btn-invalid']}`}>Order Now</Button>
             </footer>
         </Card>
     )
