@@ -4,7 +4,7 @@
     color: white;
     border: none;
     border-radius: 50px;
-    padding: 8px 32px;
+    padding: 0.5rem 2rem;
     font-size: 1rem;
     display: flex;
     justify-content: space-evenly;
@@ -17,9 +17,9 @@
 }
 
 .item-count{
-    padding: 4px 8px;
+    padding: 0.25rem 0.5rem;
     background-color: #252f3f;
-    margin-left: 16px;
+    margin-left: 1rem;
 }
 
 .cart-animation{
@@ -28,11 +28,11 @@
 
 @keyframes cart-bump{
     from{
-        padding: 12px 40px;
+        padding: 0.75rem 2.5rem;
         font-size: 1.2rem;
     }
     to{
-        padding: 8px 32px;
+        padding: 0.5rem 2rem;
         font-size: 1rem;
     }
 }

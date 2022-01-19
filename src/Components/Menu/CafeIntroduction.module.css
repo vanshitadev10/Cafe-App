@@ -5,7 +5,7 @@
     margin: auto;
     text-align: center;
     font-weight: lighter;
-    padding: 8px;
+    padding: 0.5rem;
     margin-top: 38vh;
     opacity: 0.9;
     box-shadow: 5px 5px 5px #2a303c;
@@ -15,6 +15,6 @@
     .heading{
         width: 80vw;
         margin-top: 55vh;
-        padding: 12px;
+        padding: 0.75rem;
     }
 }

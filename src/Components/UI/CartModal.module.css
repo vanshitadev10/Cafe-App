@@ -26,7 +26,7 @@
     z-index: 3;
     transform: translate(-50%, -50%);
 	animation: modalMove 0.4s ease-in-out normal;
-    padding: 32px;
+    padding: 2rem;
 }
 
 @keyframes modalMove {
@@ -41,7 +41,7 @@
 .cart{
     max-height: 30vh;
     overflow: auto;
-    padding: 0 16px 0 8px;
+    padding: 0 0.5rem;
 }
 
 .modal__price{
@@ -54,14 +54,14 @@
 
 .modal__buttons{
     display: flex;
-    gap: 16px;
+    gap: 1rem;
     align-items: center;
     justify-content: flex-end;
 }
 
 .btn{
     width: 25%;
-    padding: 16px;
+    padding: 1rem;
     font-size: 1.3rem;
 }
 
@@ -101,12 +101,12 @@
     }
 
     .modal__price h1{
-        margin: 8px 0;
+        margin: 0.5rem 0;
     }
 
     .btn{
         width: 50%;
-        padding: 8px;
+        padding: 0.5rem;
         font-size: 1rem;
     }
 }

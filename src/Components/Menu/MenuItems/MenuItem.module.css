@@ -1,7 +1,7 @@
 .menu-list__item{
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 1rem;
     text-align: left;
 }
 

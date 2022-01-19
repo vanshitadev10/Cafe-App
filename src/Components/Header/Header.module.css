@@ -18,14 +18,14 @@
 .navbar__content{
     position: fixed;
     top: 0;
-    height: 10vh;
+    height: 80px;
     width: 100vw;
     background-color: #2d3138;
     color: white;
     display: grid;
     grid-template-columns: 1fr 1fr;
     place-items: center;
-    padding: 5px 0;
+    padding: 0.375rem 0;
     font-size: 1.5rem;
     opacity: 0.92;
     z-index: 1;
@@ -33,7 +33,7 @@
 
 .heading{
     margin: 0;
-    padding: 4px;
+    padding: 0.25rem;
 }
 
 @media only screen and (max-width: 992px){
@@ -43,10 +43,11 @@
     }
 
     .navbar__content{
-        height: 22vh;
+        height: 140px;
         display: flex;
         flex-direction: column;
-        gap: 8px;
+        padding: 0.25rem 0;
+        gap: 0.5rem;
         font-size: 1.3rem;
     }
 }
